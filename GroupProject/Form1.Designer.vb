@@ -22,83 +22,76 @@ Partial Class frmMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMenu))
+        Me.btnWork = New System.Windows.Forms.Button()
+        Me.btnSport = New System.Windows.Forms.Button()
+        Me.btnEnt = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnWork
         '
-        Me.Button1.Font = New System.Drawing.Font("Copperplate Gothic Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(12, 110)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(658, 44)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Insert Menu item"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnWork.BackColor = System.Drawing.Color.Cornsilk
+        Me.btnWork.BackgroundImage = CType(resources.GetObject("btnWork.BackgroundImage"), System.Drawing.Image)
+        Me.btnWork.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnWork.Font = New System.Drawing.Font("Copperplate Gothic Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnWork.ForeColor = System.Drawing.Color.Black
+        Me.btnWork.Image = CType(resources.GetObject("btnWork.Image"), System.Drawing.Image)
+        Me.btnWork.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnWork.Location = New System.Drawing.Point(30, 68)
+        Me.btnWork.Name = "btnWork"
+        Me.btnWork.Size = New System.Drawing.Size(616, 67)
+        Me.btnWork.TabIndex = 0
+        Me.btnWork.Text = "At work"
+        Me.btnWork.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnSport
         '
-        Me.Button2.Font = New System.Drawing.Font("Copperplate Gothic Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(12, 160)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(658, 44)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Insert Menu item"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSport.BackColor = System.Drawing.Color.Cornsilk
+        Me.btnSport.BackgroundImage = CType(resources.GetObject("btnSport.BackgroundImage"), System.Drawing.Image)
+        Me.btnSport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSport.Font = New System.Drawing.Font("Copperplate Gothic Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSport.ForeColor = System.Drawing.Color.Black
+        Me.btnSport.Image = CType(resources.GetObject("btnSport.Image"), System.Drawing.Image)
+        Me.btnSport.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSport.Location = New System.Drawing.Point(30, 141)
+        Me.btnSport.Name = "btnSport"
+        Me.btnSport.Size = New System.Drawing.Size(616, 67)
+        Me.btnSport.TabIndex = 1
+        Me.btnSport.Text = "In Sports"
+        Me.btnSport.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnEnt
         '
-        Me.Button3.Font = New System.Drawing.Font("Copperplate Gothic Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(12, 210)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(658, 44)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Insert Menu item"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Copperplate Gothic Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(12, 260)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(658, 44)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Insert Menu item"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Font = New System.Drawing.Font("Copperplate Gothic Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(12, 310)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(658, 44)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Insert Menu item"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnEnt.BackColor = System.Drawing.Color.Cornsilk
+        Me.btnEnt.BackgroundImage = CType(resources.GetObject("btnEnt.BackgroundImage"), System.Drawing.Image)
+        Me.btnEnt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEnt.Font = New System.Drawing.Font("Copperplate Gothic Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnEnt.ForeColor = System.Drawing.Color.Black
+        Me.btnEnt.Image = CType(resources.GetObject("btnEnt.Image"), System.Drawing.Image)
+        Me.btnEnt.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnEnt.Location = New System.Drawing.Point(30, 214)
+        Me.btnEnt.Name = "btnEnt"
+        Me.btnEnt.Size = New System.Drawing.Size(616, 67)
+        Me.btnEnt.TabIndex = 2
+        Me.btnEnt.Text = "In Entertainment"
+        Me.btnEnt.UseVisualStyleBackColor = False
         '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlText
-        Me.ClientSize = New System.Drawing.Size(682, 372)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(682, 485)
+        Me.Controls.Add(Me.btnEnt)
+        Me.Controls.Add(Me.btnSport)
+        Me.Controls.Add(Me.btnWork)
         Me.Name = "frmMenu"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnWork As Button
+    Friend WithEvents btnSport As Button
+    Friend WithEvents btnEnt As Button
 End Class
