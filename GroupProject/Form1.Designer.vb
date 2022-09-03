@@ -81,7 +81,7 @@ Partial Class frmMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlText
-        Me.ClientSize = New System.Drawing.Size(682, 485)
+        Me.ClientSize = New System.Drawing.Size(659, 465)
         Me.Controls.Add(Me.btnEnt)
         Me.Controls.Add(Me.btnSport)
         Me.Controls.Add(Me.btnWork)
