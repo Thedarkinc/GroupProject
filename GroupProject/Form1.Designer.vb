@@ -37,7 +37,7 @@ Partial Class frmMenu
         Me.btnWork.ForeColor = System.Drawing.Color.Black
         Me.btnWork.Image = CType(resources.GetObject("btnWork.Image"), System.Drawing.Image)
         Me.btnWork.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnWork.Location = New System.Drawing.Point(22, 74)
+        Me.btnWork.Location = New System.Drawing.Point(21, 133)
         Me.btnWork.Name = "btnWork"
         Me.btnWork.Size = New System.Drawing.Size(616, 67)
         Me.btnWork.TabIndex = 0
@@ -53,7 +53,7 @@ Partial Class frmMenu
         Me.btnSport.ForeColor = System.Drawing.Color.Black
         Me.btnSport.Image = CType(resources.GetObject("btnSport.Image"), System.Drawing.Image)
         Me.btnSport.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSport.Location = New System.Drawing.Point(22, 147)
+        Me.btnSport.Location = New System.Drawing.Point(21, 206)
         Me.btnSport.Name = "btnSport"
         Me.btnSport.Size = New System.Drawing.Size(616, 67)
         Me.btnSport.TabIndex = 1
@@ -69,7 +69,7 @@ Partial Class frmMenu
         Me.btnEnt.ForeColor = System.Drawing.Color.Black
         Me.btnEnt.Image = CType(resources.GetObject("btnEnt.Image"), System.Drawing.Image)
         Me.btnEnt.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEnt.Location = New System.Drawing.Point(22, 220)
+        Me.btnEnt.Location = New System.Drawing.Point(21, 279)
         Me.btnEnt.Name = "btnEnt"
         Me.btnEnt.Size = New System.Drawing.Size(616, 67)
         Me.btnEnt.TabIndex = 2
