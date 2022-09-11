@@ -6,6 +6,7 @@
     End Sub
 
     Private Sub btnWork_Click(sender As Object, e As EventArgs) Handles btnWork.Click
+
         Dashboard.Show()
         Me.Hide()
 
