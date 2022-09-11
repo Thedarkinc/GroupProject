@@ -11,10 +11,18 @@ Public Class Work
     Private _BonusMargin As Double        'A percentage for bonuses paid to workers
     Private _NumFemaleWorkers As Integer  'number of female workers
     Private _NumMaleworkers As Integer    'number of male workers
-    Private _Female As FemaleWorker       'composition of femaleworker
-    Private _Male As MaleWorker           'composition of maleworker
-    Sub New(numFemale As Integer, numMales As Integer)
+    Private _Female() As FemaleWorker       'composition of femaleworker
+    Private _Male() As MaleWorker           'composition of maleworker
 
+    Public Sub New(numFemale As Integer, numMales As Integer)
+        ReDim _Female(numFemale)
+        ReDim _Male(numMales)
+        For i As Integer = 1 To numFemale
+            _Female(i) = New FemaleWorker
+        Next i
+        For r As Integer = 1 To numMales
+            _Male(r) = New MaleWorker
+        Next r
     End Sub
 
     Public Property NumWorkers() As Integer
