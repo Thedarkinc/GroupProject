@@ -7,6 +7,10 @@ Public Class FemaleWorker
     Private _MeternityLeaveDays As Integer 'Meternity leave days
     Private _NormalLeaveDays As Integer    'Normal leave days for women
     Private _Pregnancy As Boolean          'Is she pregnant or not?
+    Sub New()
+
+    End Sub
+
     Public Property MeternityLeaveDays() As Integer
         Get
             Return _MeternityLeaveDays

@@ -5,12 +5,18 @@ Option Explicit On
 
 Public Class Work
 
-    Private _NumWorkers As Integer 'Number of workers
-    Private _NumWorkdays As Integer 'Number of workdays per month default
-    Private _Manager As String 'Name of manager
-    Private _BonusMargin As Double 'a percentage for bonuses paid to workers
-    Private _NumFemaleWorkers As Integer 'number of female workers
+    Private _NumWorkers As Integer        'Number of workers
+    Private _NumWorkdays As Integer       'Number of workdays per month default
+    Private _Manager As String            'Name of manager
+    Private _BonusMargin As Double        'A percentage for bonuses paid to workers
+    Private _NumFemaleWorkers As Integer  'number of female workers
     Private _NumMaleworkers As Integer    'number of male workers
+    Private _Female As FemaleWorker       'composition of femaleworker
+    Private _Male As MaleWorker           'composition of maleworker
+    Sub New(numFemale As Integer, numMales As Integer)
+
+    End Sub
+
     Public Property NumWorkers() As Integer
         Get
             Return _NumWorkers
