@@ -15,7 +15,6 @@ Public Class Work
             Return _NumWorkers
         End Get
         Set(value As Integer)
-
             If value > 0 Then
                 _NumWorkers = value
             End If
@@ -31,7 +30,24 @@ Public Class Work
             End If
         End Set
     End Property
-
+    Public Property Manager() As String
+        Get
+            Return _Manager
+        End Get
+        Set(value As String)
+            _Manager = value
+        End Set
+    End Property
+    Public Property BonusMargin() As Double
+        Get
+            Return _BonusMargin
+        End Get
+        Set(value As Double)
+            If value >= 0 Then
+                _BonusMargin
+            End If
+        End Set
+    End Property
 
 
 
