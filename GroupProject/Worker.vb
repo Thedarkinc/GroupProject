@@ -1,11 +1,15 @@
-﻿Public Class Worker
+﻿Option Strict On
+Option Explicit On
+Option Infer Off
 
-    Protected _Name As String
-    Protected _Age As Integer
-    Protected _Salary As Double
-    Protected _JobName As String
-    Protected _YearsExperiance As Integer
-    Protected _AbsentDays As Integer
+Public MustInherit Class Worker
+
+    Protected _Name As String          'Name of worker
+    Protected _Age As Integer             'age of worker
+    Protected _Salary() As Double           'salary of worker
+    Protected _JobName As String          'JobName or the career
+    Protected _YearsExperiance As Integer 'ExPERIANCE IN YEARS
+    Protected _AbsentDays As Integer  'Days absent
 
     Public Property Name() As String
         Get
@@ -15,7 +19,6 @@
             _Name = value
         End Set
     End Property
-
     Public Property Age() As Integer
         Get
             Return _Age
@@ -36,6 +39,36 @@
             End If
         End Set
     End Property
-
-
+    Public Property JobName() As String
+        Get
+            Return _JobName
+        End Get
+        Set(value As String)
+            _JobName = value
+        End Set
+    End Property
+    Public Property YearsExperiance() As Integer
+        Get
+            Return _YearsExperiance
+        End Get
+        Set(value As Integer)
+            If value >= 0 Then
+                _YearsExperiance = value
+            Else
+                _YearsExperiance = 0
+            End If
+        End Set
+    End Property
+    Public Property AbsentDays() As Integer
+        Get
+            Return _AbsentDays
+        End Get
+        Set(value As Integer)
+            If value >= 0 Then
+                _AbsentDays = value
+            Else
+                _AbsentDays = 0
+            End If
+        End Set
+    End Property
 End Class
