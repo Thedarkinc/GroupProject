@@ -96,6 +96,7 @@
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
         setcol(4)
+        'Ar
     End Sub
 
 
