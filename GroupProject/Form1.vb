@@ -16,5 +16,12 @@
         _Work = New Work(numWomen, numDudes)
 
     End Sub
+
+    Private Sub btnMinions_Click(sender As Object, e As EventArgs) Handles btnMinions.Click
+        Dashboard.Show()
+        Me.Hide()
+
+
+    End Sub
     'Testing upload
 End Class

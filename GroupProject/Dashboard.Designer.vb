@@ -33,6 +33,7 @@ Partial Class Dashboard
         Me.panelmenu = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.PaymentsBar = New Guna.Charts.WinForms.GunaBarDataset()
         Me.progress = New Guna.UI2.WinForms.Guna2TaskBarProgress(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.panelmenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,7 +44,11 @@ Partial Class Dashboard
         Me.Guna2Button3.BackColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button3.BorderColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button3.BorderRadius = 20
-        Me.Guna2Button3.CheckedState.FillColor = System.Drawing.Color.White
+        Me.Guna2Button3.BorderThickness = 1
+        Me.Guna2Button3.CheckedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2Button3.CheckedState.FillColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Guna2Button3.CheckedState.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2Button3.CheckedState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2Button3.CustomizableEdges.BottomRight = False
         Me.Guna2Button3.CustomizableEdges.TopRight = False
         Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -54,7 +59,8 @@ Partial Class Dashboard
         Me.Guna2Button3.FocusedColor = System.Drawing.Color.MediumPurple
         Me.Guna2Button3.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(3, 237)
+        Me.Guna2Button3.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.Guna2Button3.Location = New System.Drawing.Point(12, 217)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.PressedColor = System.Drawing.SystemColors.MenuBar
         Me.Guna2Button3.Size = New System.Drawing.Size(190, 45)
@@ -68,6 +74,11 @@ Partial Class Dashboard
         Me.Guna2Button4.BackColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button4.BorderColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button4.BorderRadius = 20
+        Me.Guna2Button4.BorderThickness = 1
+        Me.Guna2Button4.CheckedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2Button4.CheckedState.FillColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Guna2Button4.CheckedState.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2Button4.CheckedState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2Button4.CustomizableEdges.BottomRight = False
         Me.Guna2Button4.CustomizableEdges.TopRight = False
         Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -78,7 +89,8 @@ Partial Class Dashboard
         Me.Guna2Button4.FocusedColor = System.Drawing.Color.MediumPurple
         Me.Guna2Button4.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Location = New System.Drawing.Point(3, 302)
+        Me.Guna2Button4.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.Guna2Button4.Location = New System.Drawing.Point(12, 300)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.PressedColor = System.Drawing.SystemColors.MenuBar
         Me.Guna2Button4.Size = New System.Drawing.Size(190, 45)
@@ -92,6 +104,11 @@ Partial Class Dashboard
         Me.Guna2Button2.BackColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button2.BorderColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button2.BorderRadius = 20
+        Me.Guna2Button2.BorderThickness = 1
+        Me.Guna2Button2.CheckedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2Button2.CheckedState.FillColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Guna2Button2.CheckedState.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2Button2.CheckedState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2Button2.CustomizableEdges.BottomRight = False
         Me.Guna2Button2.CustomizableEdges.TopRight = False
         Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -102,9 +119,10 @@ Partial Class Dashboard
         Me.Guna2Button2.FocusedColor = System.Drawing.Color.MediumPurple
         Me.Guna2Button2.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.HoverState.BorderColor = System.Drawing.Color.Black
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button2.Location = New System.Drawing.Point(3, 175)
+        Me.Guna2Button2.Location = New System.Drawing.Point(12, 142)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.PressedColor = System.Drawing.SystemColors.MenuBar
         Me.Guna2Button2.Size = New System.Drawing.Size(190, 45)
@@ -118,9 +136,11 @@ Partial Class Dashboard
         Me.Guna2Button1.BackColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button1.BorderColor = System.Drawing.Color.RoyalBlue
         Me.Guna2Button1.BorderRadius = 20
-        Me.Guna2Button1.Checked = True
-        Me.Guna2Button1.CheckedState.FillColor = System.Drawing.Color.White
-        Me.Guna2Button1.CheckedState.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button1.BorderThickness = 1
+        Me.Guna2Button1.CheckedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2Button1.CheckedState.FillColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Guna2Button1.CheckedState.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2Button1.CheckedState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2Button1.CustomizableEdges.BottomRight = False
         Me.Guna2Button1.CustomizableEdges.TopRight = False
         Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -131,9 +151,10 @@ Partial Class Dashboard
         Me.Guna2Button1.FocusedColor = System.Drawing.Color.MediumOrchid
         Me.Guna2Button1.Font = New System.Drawing.Font("Perpetua Titling MT", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.BorderColor = System.Drawing.Color.Black
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.Location = New System.Drawing.Point(3, 124)
+        Me.Guna2Button1.Location = New System.Drawing.Point(12, 79)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.PressedColor = System.Drawing.SystemColors.MenuBar
         Me.Guna2Button1.Size = New System.Drawing.Size(190, 45)
@@ -145,15 +166,16 @@ Partial Class Dashboard
         Me.panelmenu.AutoRoundedCorners = True
         Me.panelmenu.AutoSize = True
         Me.panelmenu.BackColor = System.Drawing.Color.RoyalBlue
-        Me.panelmenu.BorderRadius = 97
-        Me.panelmenu.Controls.Add(Me.Guna2Button1)
-        Me.panelmenu.Controls.Add(Me.Guna2Button2)
+        Me.panelmenu.BorderRadius = 101
         Me.panelmenu.Controls.Add(Me.Guna2Button4)
+        Me.panelmenu.Controls.Add(Me.Guna2Button1)
         Me.panelmenu.Controls.Add(Me.Guna2Button3)
+        Me.panelmenu.Controls.Add(Me.Guna2Button2)
+        Me.panelmenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelmenu.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.panelmenu.Location = New System.Drawing.Point(1, 12)
+        Me.panelmenu.Location = New System.Drawing.Point(0, 0)
         Me.panelmenu.Name = "panelmenu"
-        Me.panelmenu.Size = New System.Drawing.Size(196, 450)
+        Me.panelmenu.Size = New System.Drawing.Size(205, 443)
         Me.panelmenu.TabIndex = 0
         '
         'PaymentsBar
@@ -173,12 +195,21 @@ Partial Class Dashboard
         '
         Me.progress.TargetForm = Me
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Turquoise
+        Me.Panel1.Location = New System.Drawing.Point(195, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(574, 443)
+        Me.Panel1.TabIndex = 1
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
-        Me.ClientSize = New System.Drawing.Size(814, 474)
+        Me.ClientSize = New System.Drawing.Size(769, 443)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelmenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
@@ -196,4 +227,5 @@ Partial Class Dashboard
     Friend WithEvents panelmenu As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents PaymentsBar As Guna.Charts.WinForms.GunaBarDataset
     Friend WithEvents progress As Guna.UI2.WinForms.Guna2TaskBarProgress
+    Friend WithEvents Panel1 As Panel
 End Class
