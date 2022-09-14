@@ -6,7 +6,7 @@ Public MustInherit Class Worker
 
     Protected _Name As String          'Name of worker
     Protected _Age As Integer             'age of worker
-    Protected _Salary() As Double           'salary of worker
+    Protected _Salary As Double           'salary of worker
     Protected _JobName As String          'JobName or the career
     Protected _YearsExperiance As Integer 'ExPERIANCE IN YEARS
     Protected _AbsentDays As Integer  'Days absent

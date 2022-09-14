@@ -22,14 +22,18 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
+        Dim LPoint1 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint2 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Guna2GradientPanel1.SuspendLayout()
+        Me.panelmenu = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.PaymentsBar = New Guna.Charts.WinForms.GunaBarDataset()
+        Me.progress = New Guna.UI2.WinForms.Guna2TaskBarProgress(Me.components)
+        Me.panelmenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Button3
@@ -129,52 +133,57 @@ Partial Class Dashboard
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.Location = New System.Drawing.Point(3, 112)
+        Me.Guna2Button1.Location = New System.Drawing.Point(3, 124)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.PressedColor = System.Drawing.SystemColors.MenuBar
         Me.Guna2Button1.Size = New System.Drawing.Size(190, 45)
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "View Workers"
         '
-        'Guna2GradientPanel2
+        'panelmenu
         '
-        Me.Guna2GradientPanel2.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.Guna2GradientPanel2.BorderThickness = 1
-        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.MintCream
-        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.Azure
-        Me.Guna2GradientPanel2.Location = New System.Drawing.Point(190, 0)
-        Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
-        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(619, 475)
-        Me.Guna2GradientPanel2.TabIndex = 1
+        Me.panelmenu.AutoRoundedCorners = True
+        Me.panelmenu.AutoSize = True
+        Me.panelmenu.BackColor = System.Drawing.Color.RoyalBlue
+        Me.panelmenu.BorderRadius = 97
+        Me.panelmenu.Controls.Add(Me.Guna2Button1)
+        Me.panelmenu.Controls.Add(Me.Guna2Button2)
+        Me.panelmenu.Controls.Add(Me.Guna2Button4)
+        Me.panelmenu.Controls.Add(Me.Guna2Button3)
+        Me.panelmenu.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        Me.panelmenu.Location = New System.Drawing.Point(1, 12)
+        Me.panelmenu.Name = "panelmenu"
+        Me.panelmenu.Size = New System.Drawing.Size(196, 450)
+        Me.panelmenu.TabIndex = 0
         '
-        'Guna2GradientPanel1
+        'PaymentsBar
         '
-        Me.Guna2GradientPanel1.AutoRoundedCorners = True
-        Me.Guna2GradientPanel1.AutoSize = True
-        Me.Guna2GradientPanel1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Guna2GradientPanel1.BorderRadius = 238
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientPanel2)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button1)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button2)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button4)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2Button3)
-        Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(812, 478)
-        Me.Guna2GradientPanel1.TabIndex = 0
+        Me.PaymentsBar.BarPercentage = 1.0R
+        Me.PaymentsBar.BorderColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.Black})
+        LPoint1.Label = "Males"
+        LPoint1.Y = 10.0R
+        LPoint2.Label = "Female"
+        LPoint2.Y = 5.0R
+        Me.PaymentsBar.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2})
+        Me.PaymentsBar.FillColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.Blue, System.Drawing.Color.DeepPink})
+        Me.PaymentsBar.IndexLabelForeColor = System.Drawing.Color.White
+        Me.PaymentsBar.Label = "Payments"
+        '
+        'progress
+        '
+        Me.progress.TargetForm = Me
         '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
-        Me.ClientSize = New System.Drawing.Size(809, 474)
-        Me.Controls.Add(Me.Guna2GradientPanel1)
+        Me.ClientSize = New System.Drawing.Size(814, 474)
+        Me.Controls.Add(Me.panelmenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
-        Me.Guna2GradientPanel1.ResumeLayout(False)
+        Me.panelmenu.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -184,6 +193,7 @@ Partial Class Dashboard
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents panelmenu As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents PaymentsBar As Guna.Charts.WinForms.GunaBarDataset
+    Friend WithEvents progress As Guna.UI2.WinForms.Guna2TaskBarProgress
 End Class

@@ -15,8 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
     <PackageReference Include="Guna.Charts.WinForms" Version="1.0.4" />
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.4" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.5" />
+    <PackageReference Include="Microsoft.Chart.Controls" Version="4.7.2046" />
   </ItemGroup>
 
   <ItemGroup>

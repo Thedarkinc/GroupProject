@@ -6,13 +6,14 @@ Option Explicit On
 Public Class Work
 
     Private _NumWorkers As Integer        'Number of workers
+    Private _NameOfWork As String
     Private _NumWorkdays As Integer       'Number of workdays per month default
     Private _Manager As String            'Name of manager
     Private _BonusMargin As Double        'A percentage for bonuses paid to workers
     Private _NumFemaleWorkers As Integer  'number of female workers
     Private _NumMaleworkers As Integer    'number of male workers
-    Private _Female() As FemaleWorker       'composition of femaleworker
-    Private _Male() As MaleWorker           'composition of maleworker
+    Private _Female() As FemaleWorker     'composition of femaleworker
+    Private _Male() As MaleWorker         'composition of maleworker
 
     Public Sub New(numFemale As Integer, numMales As Integer)
         ReDim _Female(numFemale)
@@ -24,7 +25,14 @@ Public Class Work
             _Male(r) = New MaleWorker
         Next r
     End Sub
-
+    Public Property NameOfWork() As String
+        Get
+            Return _NameOfWork
+        End Get
+        Set(value As String)
+            _NameOfWork = value
+        End Set
+    End Property
     Public Property NumWorkers() As Integer
         Get
             Return _NumWorkers

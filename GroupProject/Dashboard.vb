@@ -98,7 +98,7 @@
         setcol(4)
     End Sub
 
-    Private Sub Guna2GradientPanel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel2.Paint
 
-    End Sub
+
+
 End Class
