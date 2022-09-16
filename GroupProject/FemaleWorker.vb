@@ -42,4 +42,5 @@ Public Class FemaleWorker
             _Pregnancy = value
         End Set
     End Property
+
 End Class
